@@ -78,6 +78,9 @@ io.on('connection', (socket) => {
 app.get("/",(req,res)=>{ 
     res.send("omk")
 })
+app.get("/",(req,res)=>{
+    res.send("hello working")
+})
 app.post("/create",async (req,res)=>{
     // console.log(req.body)
     let result=await Users.findOne({username:req.body.name})
