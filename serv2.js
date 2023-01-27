@@ -261,7 +261,7 @@ app.post("/login",async (req,res)=>{
     
 })
 //===============================================Home====================================================
-server.listen(3001,()=>{
+server.listen(process.env.PORT||3001,()=>{
     console.log("server running")
 })
 
